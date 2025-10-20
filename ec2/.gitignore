@@ -1,0 +1,28 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files (sensitive and often managed remotely)
+*.tfstate
+*.tfstate.*
+
+# Crash log files (if Terraform crashes locally)
+crash.log
+crash.*.log
+
+# Variable files that may contain sensitive data (e.g., API keys, passwords)
+# These should generally be managed outside of version control or through secure mechanisms.
+*.tfvars
+*.tfvars.json
+
+# Override files (used for local development overrides and not typically committed)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Local plan output files (if you save plan outputs)
+*.tfplan
