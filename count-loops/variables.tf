@@ -1,5 +1,5 @@
 variable "instance" {
-    default =["mongodb", "rabbitmq", "redis", "mysql"]
+    default =[ "mongodb", "rabbitmq", "redis", "mysql", "catalogue", "user", "cart", "shipping", "payment", "frontend" ]
 }
 
 variable "zone_id" {
