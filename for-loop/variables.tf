@@ -1,52 +1,16 @@
-variable "ami_id" {
-    type = string
-    default = "ami-09c813fb71547fc4f"
+variable "instance" {
+    #default =[ "mongodb", "rabbitmq", "redis", "mysql", "catalogue", "user", "cart", "shipping", "payment", "frontend" ]
+    default = {
+        mongodb = "t3.micro"
+        redis = "t3.micro" 
+        mysql = "t3.micro"
+    }
 }
 
- variable "instance_type" {
-    type = string
-    default = "t3.micro"
- }
+variable "zone_id" {
+    default = "Z0531895FHVQAQ3TAJWF"
+}
 
- variable "ec2_tags"{
-    type = map
-    default ={
-        Name = "learning -terrform"
-        course = "DevOps with AWS"
-        Trainer = "Sivakumar Reddy"
-    }
- }
-
- variable "sg_name" {
-    type = string
-    default = "allow-all"
-    description = "Security group name to attach to EC2 instance"
- }
-
- variable "cidr" {
-    type = list
-    default = ["0.0.0.0/0"]
- }
-
- variable "ingress_from_port"{
-    default = 0
- }
-
- variable "egress_from_port"{
-    default = 0
- }
-
- variable "ingress_to_port"{
-    type = number
-    default = 0
- }
-
- variable "engress_to_port"{
-    type = number
-    default = 0
- }
-
- variable "protocol" {
-    type = string
-    default = "-1"
- }
+variable "domain_name" {
+    default = "daws86s.online"
+}
