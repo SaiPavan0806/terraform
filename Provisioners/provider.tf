@@ -10,7 +10,7 @@ terraform {
 terraform {
   backend "s3" {
     bucket = "pavan-86s"
-    key    = "dynamic-block-demo"
+    key    = "provisioners-demo"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
