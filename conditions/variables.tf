@@ -1,3 +1,3 @@
 variable "environments" {
-    default = "pre-prod"
+    default = "dev"
 }
